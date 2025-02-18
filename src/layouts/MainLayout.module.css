@@ -1,0 +1,87 @@
+.sidebar {
+    border-right: 2px solid rgb(227, 227, 227);
+    padding: 0 10px;
+}
+
+.logo {
+    height: 64px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.menu {
+    border-right: none !important;
+}
+
+.menu :global(.ant-menu-item) {
+    height: 50px !important;
+    line-height: 50px !important;
+    margin: 4px 8px !important;
+    border-radius: 6px !important;
+    padding-left: 16px !important;
+}
+
+.menu :global(.ant-menu-item-selected) {
+    background-color: #3178c6 !important;
+    color: white !important;
+}
+
+.menu :global(.ant-menu-item-selected .ant-menu-item-icon) {
+    color: white !important;
+}
+
+.menu :global(.ant-menu-item:hover) {
+    color: #3178c6 !important;
+}
+
+.menu :global(.ant-menu-item-selected:hover) {
+    color: white !important;
+}
+
+.menu :global(.ant-menu-item::after) {
+    display: none !important;
+}
+
+.menu :global(.ant-menu-item .ant-menu-item-icon) {
+    min-width: 20px !important;
+    font-size: 18px !important;
+}
+
+.menuItem {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .menu :global(.ant-menu-item) {
+        margin: 4px !important;
+    }
+
+    /* Hide the background of selected item when sidebar is collapsed */
+    :global(.ant-layout-sider-collapsed).menu :global(.ant-menu-item-selected) {
+        background-color: transparent !important;
+    }
+
+    /* Adjust icon color when sidebar is collapsed */
+    :global(.ant-layout-sider-collapsed).menu :global(.ant-menu-item-selected .ant-menu-item-icon) {
+        color: #3178c6 !important;
+    }
+}
+
+/* Add these styles at the end of the file */
+.trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.trigger:hover {
+    color: #3178c6;
+}

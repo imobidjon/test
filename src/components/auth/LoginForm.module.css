@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.leftPanel {
+    flex: 1;
+    background-color: #3178C6;
+    background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/loginBG-oG214rTp1jyPUf8IeCHMzFelcju03W.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.logo {
+    max-width: 80%;
+    height: auto;
+}
+
+.formCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    border: none;
+    box-shadow: none;
+    max-width: 600px;
+}
+
+.form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.submitButton {
+    height: 40px;
+    font-size: 16px;
+    background-color: #007acc;
+    border-color: #007acc;
+}
+
+.submitButton:hover {
+    background-color: #005c99;
+    border-color: #005c99;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .leftPanel {
+        padding: 1rem;
+        min-height: 200px;
+    }
+
+    .formCard {
+        padding: 1rem;
+    }
+}
