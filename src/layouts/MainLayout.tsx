@@ -54,7 +54,6 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   ]
 
   const handleLogout = () => {
-    // Clear authentication
     localStorage.removeItem("auth_user")
     navigate("/")
   }

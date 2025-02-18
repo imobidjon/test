@@ -7,7 +7,6 @@ import { authService } from "./services/auth.service"
 
 const queryClient = new QueryClient()
 
-// Protected Route component
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return authService.isAuthenticated() ? <>{children}</> : <Navigate to="/" />
 }

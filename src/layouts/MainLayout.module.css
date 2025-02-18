@@ -56,24 +56,20 @@
     gap: 10px !important;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .menu :global(.ant-menu-item) {
         margin: 4px !important;
     }
 
-    /* Hide the background of selected item when sidebar is collapsed */
     :global(.ant-layout-sider-collapsed).menu :global(.ant-menu-item-selected) {
         background-color: transparent !important;
     }
 
-    /* Adjust icon color when sidebar is collapsed */
     :global(.ant-layout-sider-collapsed).menu :global(.ant-menu-item-selected .ant-menu-item-icon) {
         color: #3178c6 !important;
     }
 }
 
-/* Add these styles at the end of the file */
 .trigger {
     padding: 0 24px;
     font-size: 18px;

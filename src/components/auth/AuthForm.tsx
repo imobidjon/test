@@ -11,7 +11,6 @@ const LoginForm: React.FC = () => {
   const navigate = useNavigate()
 
   React.useEffect(() => {
-    // Check if user is already logged in
     if (authService.isAuthenticated()) {
       navigate("/home")
     }
